@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/nav_bg"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:padding="@dimen/_16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivItem"
+                android:src="@drawable/weather"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCityName"
+                    android:textColor="@color/splash_text_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Zagreb" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:textColor="@color/nav_item_default_text"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="scattered clouds" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:textColor="@color/nav_item_selected_text"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="18.5°C" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@color/nav_item_default_text"
+            android:alpha="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:textColor="@color/nav_item_default_text"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="Vlažnost: 65%" />
+
+            <TextView
+                android:id="@+id/tvWind"
+                android:textColor="@color/nav_item_default_text"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="Vjetar: 3.5 m/s" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="please_wait">Please wait</string>
+    <string name="welcome">Welcome</string>
+    <string name="no_internet">No internet</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_made_by_borna_bartolic">App made by Borna Bartolic</string>
+    <string name="items">Items</string>
+    <string name="about">about</string>
+    <string name="exit">exit</string>
+    <string name="picture">Picture :)</string>
+    <string name="date">Date</string>
+    <string name="osje_aj">Osjećaj:</string>
+    <dimen name="_30dp">30dp</dimen>
+</resources>
